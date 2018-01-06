@@ -5,8 +5,8 @@ node {
    	stage 'Checkout'
    		git url: 'https://github.com/malli2017/file.git'
    	stage 'Build'
-   		sh './myBuild.sh'
+   		sh chmod +x './myBuild.sh'
    	stage 'Deploy'
-   		sh './myDeployment.sh'
+   		sh chmod +x './myDeployment.sh'
   
 }
